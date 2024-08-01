@@ -281,6 +281,11 @@ const bytedanceModels = [
 
 const alibabaModes = [
   "qwen-turbo",
+  "qwen1.5-72b-chat",
+  "qwen1.5-110b-chat",
+  "qwen2-72b-instruct",
+  "llama3.1-70b-instruct",
+  "llama3.1-405b-instruct",
   "qwen-plus",
   "qwen-max",
   "qwen-max-0428",
