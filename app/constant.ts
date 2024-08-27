@@ -266,6 +266,7 @@ const openaiModels = [
   "gpt-4-32k-0613",
   "gpt-4-turbo",
   "gpt-4-turbo-preview",
+  "gpt-4o-latest",
   "gpt-4o",
   "gpt-4o-2024-05-13",
   "gpt-4o-2024-08-06",
@@ -273,9 +274,9 @@ const openaiModels = [
   "gpt-4o-mini-2024-07-18",
   "gpt-4-vision-preview",
   "gpt-4-turbo-2024-04-09",
-  "gpt-4-1106-preview",
   "dall-e-3",
   "claude-3-5-sonnet-20240620",
+  "gpt-4-1106-preview",
 ];
 
 const googleModels = [
@@ -323,6 +324,7 @@ const alibabaModes = [
   "qwen1.5-72b-chat",
   "qwen1.5-110b-chat",
   "qwen2-72b-instruct",
+  "qwen2-math-72b-instruct",
   "llama3.1-70b-instruct",
   "llama3.1-405b-instruct",
   "qwen-plus",
