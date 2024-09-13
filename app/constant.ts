@@ -250,6 +250,8 @@ export const KnowledgeCutOffDate: Record<string, string> = {
   "gpt-4o-mini": "2023-10",
   "gpt-4o-mini-2024-07-18": "2023-10",
   "gpt-4-vision-preview": "2023-04",
+  "o1-mini": "2023-10",
+  "o1-preview": "2023-10",
   // After improvements,
   // it's now easier to add "KnowledgeCutOffDate" instead of stupid hardcoding it, as was done previously.
   "gemini-pro": "2023-12",
@@ -266,7 +268,6 @@ const openaiModels = [
   "gpt-4-32k-0613",
   "gpt-4-turbo",
   "gpt-4-turbo-preview",
-  "chatgpt-4o-latest",
   "gpt-4o",
   "gpt-4o-2024-05-13",
   "gpt-4o-2024-08-06",
@@ -275,9 +276,10 @@ const openaiModels = [
   "gpt-4o-mini-2024-07-18",
   "gpt-4-vision-preview",
   "gpt-4-turbo-2024-04-09",
-  "dall-e-3",
-  "claude-3-5-sonnet-20240620",
   "gpt-4-1106-preview",
+  "dall-e-3",
+  "o1-mini",
+  "o1-preview"
 ];
 
 const googleModels = [
@@ -322,12 +324,6 @@ const bytedanceModels = [
 
 const alibabaModes = [
   "qwen-turbo",
-  "qwen1.5-72b-chat",
-  "qwen1.5-110b-chat",
-  "qwen2-72b-instruct",
-  "qwen2-math-72b-instruct",
-  "llama3.1-70b-instruct",
-  "llama3.1-405b-instruct",
   "qwen-plus",
   "qwen-max",
   "qwen-max-0428",
