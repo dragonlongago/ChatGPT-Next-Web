@@ -104,9 +104,9 @@ export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
 
 export enum ServiceProvider {
   OpenAI = "OpenAI",
-  // Azure = "Azure",
-  // Google = "Google",
-  // Anthropic = "Anthropic",
+  Azure = "Azure",
+  Google = "Google",
+  Anthropic = "Anthropic",
   Baidu = "Baidu",
   ByteDance = "ByteDance",
   Alibaba = "Alibaba",
@@ -269,6 +269,7 @@ const openaiModels = [
   // "gpt-4-turbo",
   // "gpt-4-turbo-preview",
   "gpt-4o",
+  "claude-3-5-sonnet-20240620",
   // "gpt-4o-2024-05-13",
   "gpt-4o-2024-08-06",
   "chatgpt-4o-latest",
@@ -277,26 +278,26 @@ const openaiModels = [
   // "gpt-4-vision-preview",
   // "gpt-4-turbo-2024-04-09",
   // "gpt-4-1106-preview",
-  "claude-3-5-sonnet-20240620",
   "dall-e-3",
   "o1-mini",
   "o1-preview"
 ];
 
 const googleModels = [
-  // "gemini-1.0-pro",
+  "gemini-1.0-pro",
   "gemini-1.5-pro-latest",
   "gemini-1.5-flash-latest",
   "gemini-pro-vision",
 ];
 
 const anthropicModels = [
-  // "claude-instant-1.2",
-  // "claude-2.0",
-  // "claude-2.1",
-  // "claude-3-sonnet-20240229",
+  "claude-instant-1.2",
+  "claude-2.0",
+  "claude-2.1",
+  "claude-3-sonnet-20240229",
   "claude-3-opus-20240229",
   "claude-3-haiku-20240307",
+  
 ];
 
 const baiduModels = [
@@ -365,6 +366,17 @@ export const DEFAULT_MODELS = [
       sorted: 1, // 这里是固定的，确保顺序与之前内置的版本一致
     },
   })),
+  // ...openaiModels.map((name) => ({
+  //   name,
+  //   available: true,
+  //   sorted: seq++,
+  //   provider: {
+  //     id: "azure",
+  //     providerName: "Azure",
+  //     providerType: "azure",
+  //     sorted: 2,
+  //   },
+  // })),
   ...googleModels.map((name) => ({
     name,
     available: true,
