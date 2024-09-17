@@ -104,9 +104,9 @@ export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
 
 export enum ServiceProvider {
   OpenAI = "OpenAI",
-  Azure = "Azure",
-  Google = "Google",
-  Anthropic = "Anthropic",
+  // Azure = "Azure",
+  // Google = "Google",
+  // Anthropic = "Anthropic",
   Baidu = "Baidu",
   ByteDance = "ByteDance",
   Alibaba = "Alibaba",
@@ -280,7 +280,7 @@ const openaiModels = [
   // "gpt-4-1106-preview",
   "dall-e-3",
   "o1-mini",
-  "o1-preview"
+  "o1-preview",
 ];
 
 const googleModels = [
@@ -366,17 +366,17 @@ export const DEFAULT_MODELS = [
       sorted: 1, // 这里是固定的，确保顺序与之前内置的版本一致
     },
   })),
-  // ...openaiModels.map((name) => ({
-  //   name,
-  //   available: true,
-  //   sorted: seq++,
-  //   provider: {
-  //     id: "azure",
-  //     providerName: "Azure",
-  //     providerType: "azure",
-  //     sorted: 2,
-  //   },
-  // })),
+  ...openaiModels.map((name) => ({
+    name,
+    available: true,
+    sorted: seq++,
+    provider: {
+      id: "azure",
+      providerName: "Azure",
+      providerType: "azure",
+      sorted: 2,
+    },
+  })),
   ...googleModels.map((name) => ({
     name,
     available: true,
